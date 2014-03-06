@@ -5,10 +5,8 @@
 
 ## Install
 
-Install with [npm](https://npmjs.org/package/finder-path)
-
-```
-npm install --save finder-path
+```bash
+$ npm install --save finder-path
 ```
 
 
@@ -26,4 +24,4 @@ finderPath(function (err, path) {
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
