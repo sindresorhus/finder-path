@@ -1,6 +1,6 @@
 'use strict';
 var assert = require('assert');
-var finderPath = require('./index');
+var finderPath = require('./');
 
 it('should return path of active finder window', function (cb) {
 	finderPath(function (err, dir) {
