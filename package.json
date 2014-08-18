@@ -31,6 +31,9 @@
     "folder",
     "applescript"
   ],
+  "dependencies": {
+    "run-applescript": "^1.0.0"
+  },
   "devDependencies": {
     "mocha": "*"
   }
