@@ -5,7 +5,7 @@
 
 ## Install
 
-```sh
+```
 $ npm install --save finder-path
 ```
 
@@ -13,11 +13,11 @@ $ npm install --save finder-path
 ## Usage
 
 ```js
-var finderPath = require('finder-path');
+const finderPath = require('finder-path');
 
-finderPath(function (err, path) {
+finderPath((err, path) => {
 	console.log(path);
-	//=> /Users/sindresorhus/dev/finder-path/
+	//=> '/Users/sindresorhus/dev/finder-path/'
 });
 ```
 
