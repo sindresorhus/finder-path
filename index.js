@@ -7,7 +7,7 @@ module.exports = function (cb) {
 	runApplescript(script, function (err, res) {
 		if (err) {
 			cb(err);
-			return
+			return;
 		}
 
 		cb(null, res);
