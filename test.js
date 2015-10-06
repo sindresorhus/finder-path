@@ -1,11 +1,9 @@
 import test from 'ava';
-import finderPath from './';
+import fn from './';
 
-test(t => {
-	t.plan(1);
+test(async t => {
+	const dir = await fn();
 
-	finderPath((err, dir) => {
-		console.log('Path:', dir);
-		t.regexTest(/^\/Users/, dir);
-	});
+	console.log('Path:', dir);
+	t.regexTest(/^\/Users/, dir);
 });

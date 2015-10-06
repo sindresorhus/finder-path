@@ -15,7 +15,7 @@ $ npm install --save finder-path
 ```js
 const finderPath = require('finder-path');
 
-finderPath((err, path) => {
+finderPath.then(path => {
 	console.log(path);
 	//=> '/Users/sindresorhus/dev/finder-path/'
 });
