@@ -16,7 +16,7 @@
     "darwin"
   ],
   "scripts": {
-    "test": "mocha"
+    "test": "xo && ava"
   },
   "files": [
     "index.js"
@@ -32,9 +32,15 @@
     "applescript"
   ],
   "dependencies": {
-    "run-applescript": "^1.0.0"
+    "run-applescript": "^2.0.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "ava": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "ignores": [
+      "test.js"
+    ]
   }
 }

@@ -1,15 +1,8 @@
 'use strict';
 var runApplescript = require('run-applescript');
 
-module.exports = function (cb) {
+module.exports = function () {
 	var script = 'tell app "Finder" to POSIX path of (insertion location as alias)';
 
-	runApplescript(script, function (err, res) {
-		if (err) {
-			cb(err);
-			return
-		}
-
-		cb(null, res);
-	});
+	return runApplescript(script);
 };
