@@ -1,11 +1,11 @@
-'use strict';
-var assert = require('assert');
-var finderPath = require('./');
+import test from 'ava';
+import finderPath from './';
 
-it('should return path of active finder window', function (cb) {
-	finderPath(function (err, dir) {
+test(t => {
+	t.plan(1);
+
+	finderPath((err, dir) => {
 		console.log('Path:', dir);
-		assert(/^\/Users/.test(dir));
-		cb();
+		t.regexTest(/^\/Users/, dir);
 	});
 });
