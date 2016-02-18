@@ -1,9 +1,8 @@
 import test from 'ava';
-import fn from './';
+import m from './';
 
 test(async t => {
-	const dir = await fn();
-
+	const dir = await m();
 	console.log('Path:', dir);
-	t.regexTest(/^\/Users/, dir);
+	t.regex(dir, /^\/Users/);
 });
