@@ -1,6 +1,6 @@
 # finder-path [![Build Status](https://travis-ci.org/sindresorhus/finder-path.svg?branch=master)](https://travis-ci.org/sindresorhus/finder-path)
 
-> Get the path of the current directory in Finder (OS X)
+> Get the path of the current directory in Finder (macOS)
 
 
 ## Install
