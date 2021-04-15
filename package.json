@@ -1,39 +1,40 @@
 {
-  "name": "finder-path",
-  "version": "3.0.0",
-  "description": "Get the path of the current directory in Finder (macOS)",
-  "license": "MIT",
-  "repository": "sindresorhus/finder-path",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "macos",
-    "osx",
-    "mac",
-    "finder",
-    "path",
-    "dir",
-    "directory",
-    "folder",
-    "applescript"
-  ],
-  "dependencies": {
-    "run-applescript": "^3.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  }
+	"name": "finder-path",
+	"version": "3.0.0",
+	"description": "Get the path of the current directory in Finder (macOS)",
+	"license": "MIT",
+	"repository": "sindresorhus/finder-path",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"type": "module",
+	"exports": "./index.js",
+	"engines": {
+		"node": ">=12"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"macos",
+		"mac",
+		"finder",
+		"path",
+		"directory",
+		"folder",
+		"applescript"
+	],
+	"dependencies": {
+		"run-applescript": "^5.0.0"
+	},
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"xo": "^0.38.2"
+	}
 }

@@ -1,8 +1,8 @@
 import test from 'ava';
-import m from './';
+import finderPath from './index.js';
 
-test(async t => {
-	const dir = await m();
-	console.log('Path:', dir);
-	t.regex(dir, /^\/Users/);
+test('main', async t => {
+	const directory = await finderPath();
+	t.log('Path:', directory);
+	t.regex(directory, /^\/Users/);
 });

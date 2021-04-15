@@ -2,26 +2,17 @@
 
 > Get the path of the current directory in Finder (macOS)
 
-
 ## Install
 
 ```
-$ npm install --save finder-path
+$ npm install finder-path
 ```
-
 
 ## Usage
 
 ```js
-const finderPath = require('finder-path');
+import finderPath from 'finder-path';
 
-finderPath.then(path => {
-	console.log(path);
-	//=> '/Users/sindresorhus/dev/finder-path/'
-});
+console.log(await finderPath());
+//=> '/Users/sindresorhus/dev/finder-path/'
 ```
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
