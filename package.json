@@ -1,6 +1,6 @@
 {
 	"name": "finder-path",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"description": "Get the path of the current directory in Finder (macOS)",
 	"license": "MIT",
 	"repository": "sindresorhus/finder-path",
